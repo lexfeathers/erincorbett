@@ -33,3 +33,55 @@
     <button type="submit" class="button">Submit</button>
   </p>
 </form>
+
+<style>
+  .contact {
+    max-width: 60%;
+    margin: auto;
+  }
+  .contact h2 {
+    margin: 1rem 0;
+  }
+  form.contact {
+    max-width: 64rem;
+    min-width: 48rem;
+    margin: 2rem 0;
+  }
+
+  .contact p label {
+    margin: 1rem 0;
+  }
+
+  .contact p label {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact p input:focus,
+  .contact textarea:focus {
+    border-color: var(--color-secondary);
+    box-shadow: 0px 0px 0px calc(var(--border-width) * 2) var(--color-secondary);
+  }
+  .contact p input,
+  .contact textarea {
+    width: 100%;
+    padding: 8px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: var(--font-sans-serif);
+    font-size: var(--text-small);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    border: 2px solid
+      color-mix(in srgb, var(--color-text), var(--color-background) 60%);
+    border-radius: var(--radius);
+    transition: ease-out 0.2s;
+  }
+  .contact textarea {
+    margin: 8px 0;
+    min-height: 15rem;
+    resize: none;
+  }
+  .contact button {
+    margin-top: 1rem;
+  }
+</style>

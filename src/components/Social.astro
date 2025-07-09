@@ -2,8 +2,10 @@
 const { platform, username } = Astro.props;
 ---
 
-<a href={`https://www.${platform}.com/${username}`} target="_blank"
-  >{platform}</a
+<a
+  class="button"
+  href={`https://www.${platform}.com/${username}`}
+  target="_blank">{platform}</a
 >
 
 <style>
@@ -12,5 +14,6 @@ const { platform, username } = Astro.props;
     color: var(--color-secondary);
     background-color: var(--color-text);
     text-decoration: none;
+    font-size: var(--text-small);
   }
 </style>
