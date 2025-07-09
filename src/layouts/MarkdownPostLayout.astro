@@ -1,0 +1,23 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout pageTitle={frontmatter.title}>
+  <p>
+    Published on {frontmatter.pubDate.toString().slice(0, 10)} at <time
+      datetime={frontmatter.pubDate.toString()}
+      >{frontmatter.pubDate.toString().slice(11, 16)}</time
+    >
+  </p>
+  <p><em>{frontmatter.description}</em></p>
+  <p>Written by {frontmatter.author}</p>
+  <img src={frontmatter.image.url} width="100%" alt={frontmatter.image.alt} />
+
+  <slot />
+
+  <p>Tags:</p>
+  <ul>
+    {frontmatter.tags.map((tag: string) => <li class="tag">{tag}</li>)}
+  </ul>
+</BaseLayout>
