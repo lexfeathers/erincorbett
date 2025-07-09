@@ -16,7 +16,7 @@
     --thickness: 2px;
 
     /* Layout */
-    --page-width: 800px;
+    --page-width: 1000px;
 }
 
 .page-width {
@@ -52,7 +52,7 @@ html {
 
 body {
   margin: 0 auto;
-  max-width: 80ch;
+  /* max-width: 80ch; */
   padding: 1rem;
   line-height: 1.5;
   height: 100vh;

@@ -11,14 +11,15 @@ const { pageTitle } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro - {pageTitle}</title>
+    <link rel="favicon" href="/favicon.svg" />
+    <title>Erin Corbett - {pageTitle}</title>
   </head>
   <body>
     <Header />
     <main>
       <h2>{pageTitle}</h2>
       <slot />
-      <!-- slot represents child content, and gets "slotted" in -->
+      <!-- slot represents child content, which gets "slotted" in -->
     </main>
     <Footer />
     <script>
