@@ -94,9 +94,13 @@ a {
     text-decoration: none;
 }
 
+:focus {
+    outline: calc(var(--thickness) * 2) solid var(--color-secondary);
+}
+
 h1 {
   margin: 1rem 0;
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
 }
 
 /* nav styles */
