@@ -2,11 +2,33 @@
 const { platform, username } = Astro.props;
 ---
 
-<a
-  class="button"
-  href={`https://www.${platform}.com/${username}`}
-  target="_blank">{platform}</a
->
+{
+  platform === "bandcamp" ? (
+    <a
+      class="button"
+      href={`https://${username}.${platform}.com/`}
+      target="_blank"
+    >
+      {platform}
+    </a>
+  ) : platform === "bluesky" ? (
+    <a
+      class="button"
+      href={`https://bsky.app/profile/${username}.bsky.social`}
+      target="_blank"
+    >
+      {platform}
+    </a>
+  ) : (
+    <a
+      class="button"
+      href={`https://${platform}.com/${username}`}
+      target="_blank"
+    >
+      {platform}
+    </a>
+  )
+}
 
 <style>
   a {
