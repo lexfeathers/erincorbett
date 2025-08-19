@@ -182,6 +182,114 @@ ul:has(.tag) {
     color: var(--color-secondary);
 }
 
+/* Grid! */
+.grid {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+  flex: 1 0;
+}
+@media screen and (max-width: 749px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+.grid-item {
+  background-color: var(--colour-lighter-background);
+  border: 1px solid var(--colour-text-faded);
+  border-radius: 4px;
+  height: auto;
+  box-shadow: 0px 4px 8px var(--colour-dark-background);
+  padding: 1rem;
+  align-self: stretch;
+  transition: ease-out 200ms;
+}
+.grid-item h3 {
+  color: var(--colour-tertiary);
+  font-size: var(--text-medium);
+  font-weight: 400 !important;
+  margin: 1rem 0 .5rem;
+}
+.grid-item h3:hover {
+  text-decoration: underline;
+}
+.grid-item__details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.grid-item:hover {
+  background-color: 
+  color-mix(
+    in srgb, 
+    var(--colour-lighter-background), 
+    var(--colour-text) 
+    2%
+  );
+  translate: 0 -3px;
+}
+.grid-item a:hover {
+  text-decoration: none;
+}
+.grid-item__media {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  align-items: center;
+  display: grid;
+  border-radius: 8px;
+  overflow: hidden;
+  & .item-photo {
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    height: auto;
+  }
+}
+.grid-item__information {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.grid-item__information > p {
+  font-size: calc(var(--text-small) - 4pt);
+  margin: 0.4rem 0;
+}
+.grid-item__client {
+  padding-bottom: .5rem;
+  margin-bottom: .5rem;
+  border-bottom: 1px solid var(--colour-text-faded);
+}
+.grid-item__client .icon {
+  border: 1px solid var(--colour-tertiary);
+  border-radius: 4px;
+  box-shadow: inset 0px 4px 2px var(--colour-dark-background);
+  margin-right: .25rem;
+  padding: 1px;
+}
+.grid-item__date {
+  font-size: calc(var(--text-small) * 0.8);
+  padding: .1rem .2rem;
+  width: fit-content;
+  margin: .2rem 0;
+  border: 1px solid var(--colour-text-faded);
+  border-radius: 2px;
+  align-self: right;
+}
+.grid-item__worktype {
+  font-family: var(--family-code);
+  font-size: calc(var(--text-small) * 0.8);
+  margin-bottom: .5rem;
+}
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (min-width: 636px) {
     body {
         width: var(--page-width);

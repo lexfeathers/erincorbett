@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+
+const allProjects = Object.values(
+  import.meta.glob("./projects/*.md", { eager: true })
+);
+
+const pageTitle = "Portfolio";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <div class="grid">
+    {
+      allProjects.map((project: any) => (
+        <ProjectCard
+          url={project.url}
+          title={project.frontmatter.title}
+          thumbnail={project.frontmatter.thumbnail}
+          date={project.frontmatter.pubDate}
+          author={project.frontmatter.author}
+          status={project.frontmatter.status}
+          work_type={project.frontmatter.work_type}
+        />
+      ))
+    }
+  </div>
+</BaseLayout>

@@ -1,0 +1,32 @@
+---
+const { title, url, thumbnail, author, status, work_type, date } = Astro.props;
+---
+
+<div class="grid-item">
+  <a href={url}>
+    <div class="grid-item__information">
+      <div class="grid-item__media">
+        <img src={thumbnail} alt={title} title={title} class="item-photo" />
+      </div>
+      <div class="grid-item__details">
+        <h3>{title}</h3>
+        <span class="grid-item__client text-small"
+          ><span aria-hidden="true" class="icon faded">&#9733;</span>
+          {author}</span
+        ><br />
+        <span class="grid-item__worktype">{work_type}</span>
+        <span class="grid-item__date">
+          {
+            () => {
+              if (status == "released") {
+                return `${date.slice(0, 10)}`;
+              } else {
+                return `${status}, ${date.slice(0, 10)}`;
+              }
+            }
+          }
+        </span>
+      </div>
+    </div>
+  </a>
+</div>
