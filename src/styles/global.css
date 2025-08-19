@@ -16,7 +16,7 @@
     --thickness: 2px;
 
     /* Layout */
-    --page-width: 1000px;
+    --page-width: 1200px;
 }
 
 .page-width {
@@ -106,7 +106,7 @@ h1 {
 /* nav styles */
 
 .hamburger {
-  padding-right: 20px;
+  /* padding-right: 20px; */
   cursor: pointer;
 }
 
@@ -114,6 +114,7 @@ h1 {
   display: block;
   width: 40px;
   height: 5px;
+  margin: auto;
   margin-bottom: 10px;
   background-color: var(--color-text);
 }
