@@ -92,6 +92,10 @@ a {
     }
 }
 
+img {
+  border-radius: 4px;
+}
+
 #logo {
     color: var(--color-text);
     text-decoration: none;
@@ -104,6 +108,15 @@ a {
 h1 {
   margin: 1rem 0;
   /* font-size: 2.5rem; */
+}
+
+code {
+  padding: 2px 4px;
+  background-color: var(--color-darker-background);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-text-faded);
+  border-radius: 4px;
+  box-shadow: inset 0px 2px 2px var(--color-text-faded);
 }
 
 /* nav styles */
@@ -296,6 +309,31 @@ ul:has(.tag) {
   height: auto;
 }
 
+/* Blog */
+.post-list__item {
+  padding: 1rem;
+  border: 2px solid var(--color-text-faded);
+  border-radius: 4px;
+  background-color: var(--color-darker-background);
+  box-shadow: 0px 4px 4px var(--color-darker-background);
+  transition: .15s;
+}
+.post-list__item:hover {
+  background-color: var(--color-background);
+  translate: 2px;
+}
+.blog-list {
+  list-style: none;
+  padding-left: 0px;
+}
+.post-list__item::before {
+  content: '◬ ';
+}
+a:has(.post-list__item) {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
 /* Youtube and Bandcamp embeds */
 iframe[title="YouTube video player"]{
   display: block;
@@ -305,7 +343,7 @@ iframe[title="YouTube video player"]{
   border-radius: 4px;
   box-shadow: 0px 4px 8px var(--colour-background);
 }
-@media screen and max-width(749px) {
+@media screen and (max-width: 749px) {
   iframe[title="YouTube video player"] {
     height: auto;
   }

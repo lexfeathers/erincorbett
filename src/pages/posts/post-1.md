@@ -2,23 +2,19 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'My First Blog Post'
 pubDate: 2022-07-01
-description: 'This is the first post of my new Astro blog.'
-author: 'Astro Learner'
+description: 'This is the first post of this new blog.'
+author: 'Lex'
 image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'The Astro logo on a dark background with a pink glow.'
-tags: ["astro", "blogging", "learning in public"]
+    url: '/images/hotspot-hotshot_still.jpg'
+    alt: 'A still from hotspot hotshot depicting an office with 4 workers at their desks.'
+tags: ["website meta", "blogging", "bullying"]
 ---
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
+Hey Erin, this is a blog post. You can write markdown and it will render as HTML.
 
-## What I've accomplished
+For example:
 
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
+# You're a huge fucking nerd
 
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
+see? that was a heading. You can use `##` before a string of text to make it a heading. The number of `#` characters corresponds with the heading number in html. This means the above was an `<h2>`.
 
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
-
-## What's next
-
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+Love u

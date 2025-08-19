@@ -10,7 +10,7 @@ const pageTitle = "Blog";
 
 <BaseLayout pageTitle={pageTitle}>
   <p>All posts:</p>
-  <ul>
+  <ul class="blog-list">
     {
       allPosts.map((post: any) => (
         <BlogPost
