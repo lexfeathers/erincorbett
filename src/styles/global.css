@@ -322,6 +322,9 @@ iframe[title="YouTube video player"] {
         width: auto;
         background: none;
         color: var(--color-text);
+        border-left: 2px solid var(--color-text-faded);
+        border-right: 2px solid var(--color-text-faded);
+        padding-left: 1rem;
       }
       
       .nav-links a {
