@@ -328,7 +328,7 @@ ul:has(.tag) {
   padding-left: 0px;
 }
 .post-list__item::before {
-  content: '◬ ';
+  content: '◯ ';
 }
 a:has(.post-list__item) {
   color: var(--color-text);
