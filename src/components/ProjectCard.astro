@@ -15,7 +15,9 @@ const { title, url, thumbnail, client, status, work_type, description, date } =
           ><span aria-hidden="true" class="icon faded">&#9733;</span>
           {client}</span
         ><br />
-        <span class="grid-item__worktype">{work_type}</span>
+        <span class="grid-item__worktype"
+          >{work_type.map((item: string) => <span>{item}</span>)}</span
+        >
         <span class="grid-item__date">
           {
             () => {
