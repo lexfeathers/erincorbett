@@ -19,6 +19,14 @@ const { platform, username } = Astro.props;
     >
       {platform}
     </a>
+  ) : platform == "youtube" ? (
+    <a
+      class="button"
+      href={`https://${platform}.com/channel/${username}`}
+      target="_blank"
+    >
+      {platform}
+    </a>
   ) : (
     <a
       class="button"
