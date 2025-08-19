@@ -98,7 +98,7 @@ a {
 }
 
 :focus {
-    outline: calc(var(--thickness) * 2) solid var(--color-secondary);
+    outline: calc(var(--thickness) * 2) solid var(--color-text-faded);
 }
 
 h1 {
