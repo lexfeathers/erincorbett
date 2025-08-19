@@ -11,9 +11,9 @@ description: ""
 workType: ["Music Video"]
 ---
 
-Music video for the single "Buick Riviera" from Toronto-based Slug Altar off their debut EP "Salt to the Slug"
+Music video for the single "Buick Riviera" from Toronto-based Slug Altar off their debut EP "Salt to the Slugs"
 
-BUY SALT TO THE SLUG NOW AT: https://slugaltar.bandcamp.com
+Buy 'Salt to The  Slugs': https://slugaltar.bandcamp.com
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LWdbUvcyIjU?si=jPMmsGLKw-pm8K3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
