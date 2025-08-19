@@ -32,3 +32,7 @@ I wanted to capture the Nov-March sounds of:
 90% of this was recorded LIVE to a single stereo track with no overdubs, multitracking, or editing. I used an SP-404, electric guitar, and a small but versatile modular rack for all the sounds
 
 The 10% that was overdubbed includes: the vocals on tracks 1 4 and 9, as well as most of track 9 which was composed in ableton
+
+## listen on Bandcamp:
+
+<iframe style="border: 0; width: 100%; height: 439px;" src="https://bandcamp.com/EmbeddedPlayer/album=3020854686/size=large/bgcol=333333/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="https://erincorbett.bandcamp.com/album/terminal-thaw">Terminal Thaw by Erin Corbett</a></iframe>

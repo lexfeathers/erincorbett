@@ -27,3 +27,7 @@ verb
 
 - Written, Produced, and Performed by Erin Corbett
 - Additional Vocals by Aniqa Qadir
+
+## listen on Bandcamp:
+
+<iframe style="border: 0; width: 100%; height: 439px;" src="https://bandcamp.com/EmbeddedPlayer/album=3984688000/size=large/bgcol=333333/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="https://erincorbett.bandcamp.com/album/flexthewave">#fLEXTHEWAVE by Erin Corbett</a></iframe>

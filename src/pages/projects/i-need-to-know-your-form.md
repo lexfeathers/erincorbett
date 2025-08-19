@@ -13,6 +13,10 @@ workType: ["Music", "Single"]
 
 A collaboration with [Void Femmes](https://voidfemmes.bandcamp.com)
 
+## listen on Bandcamp:
+
+<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=893151644/size=large/bgcol=333333/linkcol=e99708/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://erincorbett.bandcamp.com/track/i-need-to-know-your-form">I Need To Know Your Form by Void Femmes &amp; Erin Corbett</a></iframe>
+
 ## lyrics
 
 In the dark I found a passage through
