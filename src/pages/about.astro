@@ -2,60 +2,8 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "About Me";
-
-const identity = {
-  firstName: "Erin",
-  country: "Canada",
-  occupation: "Musician",
-  hobbies: ["gay", "video games", "catsitting"],
-};
-
-const skills = ["Guitar", "Piano", "Writing posts"];
-
-const happy = true;
-const finished = false;
-const goal = 3;
-
-const cats = ["Beef", "Cassie", "Pollo", "Benny", "Prince"];
-
-// const skillColour = "navy";
-// const fontWeight = "bold";
-// const textCase = "uppercase";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <!-- <style is:global define:vars={{ skillColour, fontWeight, textCase }}>
-    h2 {
-      color: brown;
-      font-size: 4rem;
-    }
-    .skill {
-      color: var(--skillColour);
-      font-weight: var(--fontWeight);
-      text-transform: var(--textCase);
-    }
-  </style> -->
-  <p>Here are a few facts about me:</p>
-  <ul>
-    <li>My name is {identity.firstName}.</li>
-    <li>
-      I live in {identity.country} and I work as a {identity.occupation}.
-    </li>
-    {
-      identity.hobbies.length >= 2 && (
-        <li>
-          Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}
-        </li>
-      )
-    }
-  </ul>
-  <p>My skills are:</p>
-  <ul>
-    {skills.map((skill) => <li class="skill">{skill}</li>)}
-  </ul>
-
-  <p>Finally, here are some cats I know:</p>
-  <ul>
-    {cats.map((cat) => <li>{cat}</li>)}
-  </ul>
+  <!-- Erin, add stuff here. You can use HTML. -->
 </BaseLayout>
