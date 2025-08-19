@@ -1,5 +1,6 @@
 ---
-const { title, url, thumbnail, author, status, work_type, date } = Astro.props;
+const { title, url, thumbnail, client, status, work_type, description, date } =
+  Astro.props;
 ---
 
 <div class="grid-item">
@@ -12,7 +13,7 @@ const { title, url, thumbnail, author, status, work_type, date } = Astro.props;
         <h3>{title}</h3>
         <span class="grid-item__client text-small"
           ><span aria-hidden="true" class="icon faded">&#9733;</span>
-          {author}</span
+          {client}</span
         ><br />
         <span class="grid-item__worktype">{work_type}</span>
         <span class="grid-item__date">

@@ -1,11 +1,13 @@
 ---
 layout: ../../layouts/ProjectLayout.astro
 title: "I Need To Know Your Form"
-author: "Void Femmes & Erin Corbett"
+client: "Void Femmes & Erin Corbett"
 thumbnail: '/images/thumb_intkyf_cover.jpg'
 image: '/images/intkyf_cover.jpg'
+image_description: "Cover artwork for I Need to Know Your Form"
 pubDate: 2023-10-06
 status: released
+description: ""
 workType: ["Music", "Single"]
 ---
 

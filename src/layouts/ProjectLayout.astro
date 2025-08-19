@@ -4,15 +4,52 @@ const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-  <p>
-    Published on {frontmatter.pubDate.toString().slice(0, 10)} at <time
-      datetime={frontmatter.pubDate.toString()}
-      >{frontmatter.pubDate.toString().slice(11, 16)}</time
-    >
+  <style is:global>
+    @media screen and min-width(750px) {
+      .article-image {
+        max-width: 80%;
+      }
+    }
+    .article-image {
+      border-radius: 6px;
+      max-width: 100%;
+    }
+    figure {
+      margin: auto;
+    }
+  </style>
+  <p style="margin-bottom: 0px;">
+    {
+      frontmatter.status == "released"
+        ? "Released: " + frontmatter.pubDate.toString().slice(0, 10)
+        : frontmatter.status +
+          ", " +
+          frontmatter.pubDate.toString().slice(0, 10)
+    }
   </p>
-  <p><em>{frontmatter.description}</em></p>
-  <p>{frontmatter.author}</p>
-  <img src={frontmatter.image} width="100%" alt={frontmatter.image_alt} />
+  {
+    frontmatter.description && (
+      <p>
+        <em>{frontmatter.description}</em>
+      </p>
+    )
+  }
+  <p>
+    <span aria-hidden="true" class="icon faded">&#9733;</span>
+    <span>
+      {frontmatter.client}
+    </span>
+  </p>
+  <figure>
+    <img
+      class="article-image"
+      src={frontmatter.image}
+      alt={frontmatter.image_description}
+    />
+    <figcaption style="font-style: italic;">
+      {frontmatter.image_description && frontmatter.image_description}
+    </figcaption>
+  </figure>
 
   <slot />
 </BaseLayout>
