@@ -168,6 +168,7 @@ code {
 
 ul:has(.tag) {
   padding-left: 0px;
+  line-height: 40pt;
 }
 .tag {
   list-style: none;
@@ -178,6 +179,7 @@ ul:has(.tag) {
   margin-right: .5rem;
   display: inline;
   color: var(--color-text);
+  word-break: break-all;
 }
 
 .button {
@@ -312,6 +314,7 @@ ul:has(.tag) {
 
 /* Blog */
 .post-list__item {
+  margin-bottom: 1rem;
   padding: 1rem;
   border: 2px solid var(--color-text-faded);
   border-radius: 4px;

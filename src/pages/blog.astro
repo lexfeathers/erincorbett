@@ -9,7 +9,20 @@ const pageTitle = "Blog";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <p>All posts:</p>
+  <p>
+    {allPosts.length != 0 && allPosts.length}
+    {
+      () => {
+        if (allPosts.length == 1) {
+          return "post:";
+        } else if (allPosts.length == 0) {
+          return "No posts yet";
+        } else {
+          return "posts:";
+        }
+      }
+    }
+  </p>
   <ul class="blog-list">
     {
       allPosts.map((post: any) => (

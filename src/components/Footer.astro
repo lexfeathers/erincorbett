@@ -13,11 +13,13 @@ import Social from "./Social.astro";
   }
   .social-list {
     padding-left: 0px;
+    height: fit-content;
+    line-height: 32pt;
   }
   .social-item {
     list-style: none;
     display: inline;
-    margin-right: 0.5rem;
+    margin: auto;
   }
 </style>
 
@@ -25,8 +27,14 @@ import Social from "./Social.astro";
   <ul class="social-list">
     <li class="social-item">
       <Social platform="instagram" username="erincorbettmusic" />
+    </li>
+    <li class="social-item">
       <Social platform="bluesky" username="erincorbett" />
+    </li>
+    <li class="social-item">
       <Social platform="bandcamp" username="erincorbett" />
+    </li>
+    <li class="social-item">
       <Social platform="youtube" username="UCVJf72_iK-LAKZnxki5yLIw" />
     </li>
   </ul>
