@@ -1,10 +1,17 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ProjectCard from "../components/ProjectCard.astro";
+import { getCollection } from "astro:content";
+import dayjs from "dayjs";
 
-const allProjects = Object.values(
-  import.meta.glob("./projects/*.md", { eager: true })
-);
+// const allProjects = Object.values(
+//   import.meta.glob("./projects/*.md", { eager: true })
+// );
+
+const allProjects = await getCollection("portfolio");
+allProjects.sort((a, b) => {
+  return dayjs(b.data.pubDate).isBefore(dayjs(a.data.pubDate)) ? -1 : 1;
+});
 
 const pageTitle = "Portfolio";
 ---
@@ -14,13 +21,13 @@ const pageTitle = "Portfolio";
     {
       allProjects.map((project: any) => (
         <ProjectCard
-          url={project.url}
-          title={project.frontmatter.title}
-          thumbnail={project.frontmatter.thumbnail}
-          date={project.frontmatter.pubDate}
-          client={project.frontmatter.client}
-          status={project.frontmatter.status}
-          work_type={project.frontmatter.workType}
+          url={`/projects/${project.id}/`}
+          title={project.data.title}
+          thumbnail={project.data.thumbnail}
+          date={project.data.pubDate}
+          client={project.data.client}
+          status={project.data.status}
+          work_type={project.data.workType}
         />
       ))
     }

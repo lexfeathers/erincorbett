@@ -22,9 +22,9 @@ const { title, url, thumbnail, client, status, work_type, description, date } =
           {
             () => {
               if (status == "released") {
-                return `${date.slice(0, 10)}`;
+                return `${date.toISOString().slice(0, 10)}`;
               } else {
-                return `${status}, ${date.slice(0, 10)}`;
+                return `${status}, ${date.toISOString().slice(0, 10)}`;
               }
             }
           }
