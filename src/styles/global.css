@@ -5,6 +5,9 @@
     --color-text: black;
     --color-secondary: #f4ffd3;
     --color-background: #c98600;
+    --color-lighter-background: color-mix(in srgb, var(--color-background), var(--color-secondary) 10%);
+    --color-darker-background: color-mix(in srgb, var(--color-background), var(--color-text) 10%);
+    --color-text-faded: color-mix(in srgb, var(--color-text), var(--color-background) 70%);
 
     /* Font sizing */
     --text-small: 12pt;
@@ -186,7 +189,7 @@ ul:has(.tag) {
 .grid {
   margin: 2rem 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 1rem;
   align-items: center;
   flex: 1 0;
@@ -197,17 +200,17 @@ ul:has(.tag) {
   }
 }
 .grid-item {
-  background-color: var(--colour-lighter-background);
-  border: 1px solid var(--colour-text-faded);
+  background-color: var(--color-background);
+  border: 2px solid var(--color-text-faded);
   border-radius: 4px;
   height: auto;
-  box-shadow: 0px 4px 8px var(--colour-dark-background);
+  box-shadow: 0px 4px 8px var(--color-darker-background);
   padding: 1rem;
   align-self: stretch;
   transition: ease-out 200ms;
 }
 .grid-item h3 {
-  color: var(--colour-tertiary);
+  color: var(--color-text);
   font-size: var(--text-medium);
   font-weight: 400 !important;
   margin: 1rem 0 .5rem;
@@ -223,16 +226,10 @@ ul:has(.tag) {
   justify-content: space-between;
 }
 .grid-item:hover {
-  background-color: 
-  color-mix(
-    in srgb, 
-    var(--colour-lighter-background), 
-    var(--colour-text) 
-    2%
-  );
+  background-color: var(--color-lighter-background);
   translate: 0 -3px;
 }
-.grid-item a:hover {
+.grid-item a {
   text-decoration: none;
 }
 .grid-item__media {
@@ -254,6 +251,7 @@ ul:has(.tag) {
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
+  color: var(--color-text);
 }
 .grid-item__information > p {
   font-size: calc(var(--text-small) - 4pt);
@@ -299,18 +297,19 @@ ul:has(.tag) {
         position: static;
         width: auto;
         background: none;
-    }
-
-    .nav-links a {
+        color: var(--color-text);
+      }
+      
+      .nav-links a {
         display: inline-block;
         padding: 15px 20px;
-        background-color: var(--color-text);
-        color: var(--color-secondary);
-    }
-    .nav-links a:hover,
-    .nav-links a:focus {
-        background-color: color-mix(in srgb, var(--color-text), var(--color-background) 20%);
+        /* background-color: var(--color-lighter-background); */
+      }
+      .nav-links a:hover,
+      .nav-links a:focus {
         text-decoration: underline;
+        box-shadow: inset 0px 0px 0px 2px var(--color-text-faded);
+        background-color: var(--color-darker-background);
     }
 
     .hamburger {
