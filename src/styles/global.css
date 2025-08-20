@@ -276,7 +276,7 @@ ul:has(.tag) {
 }
 .grid-item__client {
   padding-bottom: .5rem;
-  margin-bottom: .5rem;
+  margin: .5rem 0;
   border-bottom: 1px solid var(--colour-text-faded);
   display: flex;
   justify-self: flex-end;
@@ -285,8 +285,9 @@ ul:has(.tag) {
   border: 1px solid var(--colour-tertiary);
   border-radius: 4px;
   box-shadow: inset 0px 4px 2px var(--colour-dark-background);
-  margin-right: .25rem;
+  margin-right: .5rem;
   padding: 1px;
+  font-size: 10pt;
 }
 .grid-item__date {
   font-size: calc(var(--text-small) * 0.8);
