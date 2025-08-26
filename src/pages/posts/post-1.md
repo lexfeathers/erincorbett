@@ -13,7 +13,7 @@ Hey Erin, this is a blog post. You can write markdown and it will render as HTML
 
 For example:
 
-# You're a huge fucking nerd
+## You're a huge fucking nerd
 
 see? that was a heading. You can use `##` before a string of text to make it a heading. The number of `#` characters corresponds with the heading number in html. This means the above was an `<h2>`.
 
