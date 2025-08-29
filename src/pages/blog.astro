@@ -1,21 +1,26 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
+
 const allPosts = Object.values(
   import.meta.glob("./posts/*.md", { eager: true })
 );
+const publicPosts = allPosts.filter((post: any) => {
+  const isPublic = post.frontmatter.draft == false;
+  return isPublic;
+});
 
 const pageTitle = "Blog";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <p>
-    {allPosts.length != 0 && allPosts.length}
+    {publicPosts.length != 0 && publicPosts.length}
     {
       () => {
-        if (allPosts.length == 1) {
+        if (publicPosts.length == 1) {
           return "post:";
-        } else if (allPosts.length == 0) {
+        } else if (publicPosts.length == 0) {
           return "No posts yet";
         } else {
           return "posts:";
@@ -25,7 +30,7 @@ const pageTitle = "Blog";
   </p>
   <ul class="blog-list">
     {
-      allPosts.map((post: any) => (
+      publicPosts.map((post: any) => (
         <BlogPost
           url={post.url}
           title={post.frontmatter.title}

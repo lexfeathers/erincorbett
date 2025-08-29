@@ -2,6 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'My First Blog Post'
 pubDate: 2025-08-19
+draft: false
 description: 'This is the first post of this new blog.'
 author: 'Lex'
 image:
