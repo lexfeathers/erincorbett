@@ -2,9 +2,11 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
 
+// Get all markdown posts in the /posts directory
 const allPosts = Object.values(
   import.meta.glob("./posts/*.md", { eager: true })
 );
+// Filter for non-drafted posts
 const publicPosts = allPosts.filter((post: any) => {
   const isPublic = post.frontmatter.draft == false;
   return isPublic;
