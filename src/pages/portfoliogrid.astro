@@ -4,10 +4,6 @@ import ProjectCard from "../components/ProjectCard.astro";
 import { getCollection } from "astro:content";
 import dayjs from "dayjs";
 
-// const allProjects = Object.values(
-//   import.meta.glob("./projects/*.md", { eager: true })
-// );
-
 const allProjects = await getCollection("portfolio");
 allProjects.sort((a, b) => {
   return dayjs(b.data.pubDate).isBefore(dayjs(a.data.pubDate)) ? -1 : 1;
