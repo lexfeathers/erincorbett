@@ -4,7 +4,9 @@ import ProjectCard from "../components/ProjectCard.astro";
 import { getCollection } from "astro:content";
 import dayjs from "dayjs";
 
-const allProjects = await getCollection("portfolio");
+const allProjects = await getCollection("portfolio", ({ data }) => {
+  return data.draft == false;
+});
 allProjects.sort((a, b) => {
   return dayjs(b.data.pubDate).isBefore(dayjs(a.data.pubDate)) ? -1 : 1;
 });
