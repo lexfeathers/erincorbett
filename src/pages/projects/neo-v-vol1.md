@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/ProjectLayout.astro
 title: "NEO-V EXTREME reCALIBRATION PERSONALIZED syntholic MIXTAPE VOL. 1"
+draft: false
 client: "Erin Corbett"
 thumbnail: '/images/thumb_neo-v-vol1_cover.jpg'
 image: '/images/neo-v-vol1_cover.jpg'

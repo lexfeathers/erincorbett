@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/ProjectLayout.astro
 title: "Sertralina"
+draft: false
 client: "Erin Corbett"
 thumbnail: '/images/thumb_sertralina_cover.jpg'
 image: '/images/sertralina_cover.jpg'

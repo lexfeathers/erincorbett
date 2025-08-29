@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/ProjectLayout.astro
 title: "Angel Liver"
+draft: false
 client: "Erin Corbett"
 thumbnail: '/images/thumb_angelliver_cover.jpg'
 image: '/images/angelliver_cover.jpg'

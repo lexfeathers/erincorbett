@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/ProjectLayout.astro
 title: "Salt To The Slugs"
+draft: false
 client: "Slug Altar"
 thumbnail: '/images/thumb_salttotheslugs_cover.jpg'
 image: '/images/salttotheslugs_cover.jpg'

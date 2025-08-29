@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/ProjectLayout.astro
 title: "I Need To Know Your Form"
+draft: false
 client: "Void Femmes & Erin Corbett"
 thumbnail: '/images/thumb_intkyf_cover.jpg'
 image: '/images/intkyf_cover.jpg'

@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/ProjectLayout.astro
 title: "Buick Riviera"
+draft: false
 client: "Slug Altar"
 thumbnail: '/images/thumb_buick-riviera_still.png'
 image: '/images/buick-riviera_still.jpg'

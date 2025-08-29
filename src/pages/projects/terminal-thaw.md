@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/ProjectLayout.astro
 title: "Terminal Thaw"
+draft: false
 client: "Erin Corbett"
 thumbnail: '/images/thumb_terminal-thaw_cover.jpg'
 image: '/images/terminal-thaw_cover.jpg'

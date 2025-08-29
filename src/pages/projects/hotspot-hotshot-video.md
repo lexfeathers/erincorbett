@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/ProjectLayout.astro
 title: "Hotspot Hotshot"
+draft: false
 client: "Martian Crisis Unit"
 thumbnail: '/images/thumb_hotspot-hotshot_still.png'
 image: '/images/hotspot-hotshot_still.jpg'

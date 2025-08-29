@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/ProjectLayout.astro
 title: "Swelter Molt Sweat and Mettle"
+draft: false
 client: "Erin Corbett"
 thumbnail: '/images/thumb_sweltermoltsweatandmettle_cover.jpg'
 image: '/images/sweltermoltsweatandmettle_cover.jpg'

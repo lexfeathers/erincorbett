@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/ProjectLayout.astro
 title: "Radio CD"
+draft: false
 client: "Erin Corbett"
 thumbnail: '/images/thumb_radio-cd_still.jpg'
 image: '/images/radio-cd_still.jpg'

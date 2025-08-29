@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/ProjectLayout.astro
 title: "Terminal 3"
+draft: false
 client: "Static Channel"
 thumbnail: '/images/thumb_terminal-3_still.png'
 image: '/images/terminal-3_still.jpg'

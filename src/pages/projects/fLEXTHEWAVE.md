@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/ProjectLayout.astro
 title: "#fLEXTHEWAVE"
+draft: false
 client: "Erin Corbett"
 thumbnail: '/images/thumb_fLEXTHEWAVE_cover.jpg'
 image: '/images/fLEXTHEWAVE_cover.jpg'
