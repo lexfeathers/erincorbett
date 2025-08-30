@@ -1,5 +1,5 @@
 ---
-import Social from "./Social.astro";
+
 ---
 
 <style>
@@ -10,6 +10,13 @@ import Social from "./Social.astro";
     margin-top: 2rem;
     border-top: 2px solid var(--color-text-faded);
     padding-top: 1rem;
+  }
+  a {
+    padding: 0.5rem 1rem;
+    color: var(--color-secondary);
+    background-color: var(--color-text);
+    text-decoration: none;
+    font-size: var(--text-small);
   }
   .social-list {
     padding-left: 0px;
@@ -26,16 +33,30 @@ import Social from "./Social.astro";
 <footer>
   <ul class="social-list">
     <li class="social-item">
-      <Social platform="instagram" username="erincorbettmusic" />
+      <a
+        class="button"
+        href="https://instagram.com/erincorbettmusic"
+        target="_blank">instagram</a
+      >
     </li>
     <li class="social-item">
-      <Social platform="bluesky" username="erincorbett" />
+      <a
+        class="button"
+        href="https://bsky.app/profile/erincorbett.bsky.social"
+        target="_blank">bluesky</a
+      >
     </li>
     <li class="social-item">
-      <Social platform="bandcamp" username="erincorbett" />
+      <a class="button" href="https://erincorbett.bandcamp.com" target="_blank"
+        >bandcamp</a
+      >
     </li>
     <li class="social-item">
-      <Social platform="youtube" username="UCVJf72_iK-LAKZnxki5yLIw" />
+      <a
+        class="button"
+        href="https://youtube.com/channel/UCVJf72_iK-LAKZnxki5yLIw"
+        target="_blank">youtube</a
+      >
     </li>
   </ul>
   <p>&copy; Erin Corbett {new Date().getFullYear()}</p>
