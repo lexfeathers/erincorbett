@@ -4,10 +4,12 @@
     /* Colours */
     --color-text: black;
     --color-secondary: #f4ffd3;
-    --color-background: #c98600;
+    --color-background: #ffaa00;
+    --color-background-gradient: linear-gradient(to bottom, #ffaa00, #c98600);
     --color-lighter-background: color-mix(in srgb, var(--color-background), var(--color-secondary) 10%);
     --color-darker-background: color-mix(in srgb, var(--color-background), var(--color-text) 10%);
     --color-text-faded: color-mix(in srgb, var(--color-text), var(--color-background) 70%);
+    --color-darker-text-faded: color-mix(in srgb, var(--color-text), var(--color-background) 50%);
 
     /* Font sizing */
     --text-small: 12pt;
@@ -36,6 +38,20 @@
     font-size: var(--text-large);
 }
 
+.hidden {
+  display: none !important;
+}
+
+.rotate45 {
+  transform: rotate(45deg);
+  margin-bottom: 0px !important;
+}
+
+.rotate-45 {
+  transform: rotate(-45deg);
+  margin-bottom: 0px !important;
+}
+
 .visually-hidden {
   position: absolute !important;
   overflow: hidden;
@@ -49,18 +65,20 @@
 }
 
 html {
-  background-color: var(--color-background);
   font-family: 'Fira Code', monospace;
+  height: 100%;
 }
 
 body {
+  display: flex;
+  height: 100vh;
   margin: 0 auto;
-  /* max-width: 80ch; */
   padding: 1rem;
   line-height: 1.5;
-  height: 100vh;
-  display: flex;
   flex-direction: column;
+  background: var(--color-background-gradient);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 header {
@@ -121,18 +139,25 @@ code {
 
 /* nav styles */
 
-.hamburger {
+.hamburger, .hamburger-x {
   /* padding-right: 20px; */
   cursor: pointer;
 }
 
-.hamburger .line {
+.hamburger-x {
+  height: 40px;
+  margin-top: .8rem;
+}
+
+.hamburger .line,
+.hamburger-x .line {
   display: block;
   width: 40px;
-  height: 5px;
+  height: 4px;
   margin: auto;
   margin-bottom: 10px;
-  background-color: var(--color-text);
+  background-color: var(--color-darker-text-faded);
+  transform-origin: 44%;
 }
 .nav-links {
   width: 100%;
@@ -151,7 +176,7 @@ code {
   font-size: 1.2rem;
   font-weight: 400;
   text-transform: uppercase;
-  background-color: var(--color-background);
+  /* background-color: var(--color-background); */
   color: var(--color-text);
   border-radius: var(--radius);
 }
