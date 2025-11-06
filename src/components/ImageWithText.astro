@@ -1,0 +1,15 @@
+---
+const { image_url, image_alt, heading, text } = Astro.props;
+---
+
+<div class="image-with-text">
+  <div class="image-with-text__image">
+    <img src={image_url} alt={image_alt} />
+  </div>
+  <div class="image-with-text__text">
+    <h2>{heading}</h2>
+    <p>
+      {text}
+    </p>
+  </div>
+</div>

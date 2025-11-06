@@ -1,10 +1,26 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-
+import ImageWithText from "../components/ImageWithText.astro";
 const pageTitle = "About";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h2>Erin Corbett (she/her)</h2>
-  <p>Hi, I'm Erin!</p>
+  <ImageWithText
+    image_url="/images/ErinCorbett_APileOfConcertTickets.jpeg"
+    image_alt="This is a placeholder image with placeholder alt text!"
+    heading="Erin Corbett (she/her)"
+    text="Erin is a musician, sound designer, gamedev and 3D animator based in Toronto, Canada."
+  />
+
+  <p>Hi, I'm Erin! This is the body text of my about page.</p>
+  <p>To follow is a lot of french canadian swearing.</p>
+  <p>
+    Calvinouche de sapristi de viarge de verrat de saint-sacrament de mosus de
+    saint-ciboire de cul de christie d'enfant d'chienne de bâtard de mautadine.
+  </p>
+  <p>
+    Sacréfice de doux Jésus de viarge de saint-ciboire de mosus d'enfant
+    d'chienne de torvisse de crisse de cossin de colon de boswell de bout
+    d'ciarge.
+  </p>
 </BaseLayout>
