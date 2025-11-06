@@ -6,12 +6,16 @@ const title = "Erin Corbett";
 ---
 
 <header>
-  <h1>
-    <a href="/" id="logo"><img src="/favicon.ico" alt="Erin Corbett" /></a>
-    <a href="/" id="logo">{title}</a>
-  </h1>
+  <div class="header-top">
+    <h1>
+      <a href="/" id="logo"><img src="/favicon.ico" alt="Erin Corbett" /></a>
+      <a href="/" id="logo">{title}</a>
+    </h1>
+    <div class="hamburger-icons">
+      <Hamburger />
+    </div>
+  </div>
   <nav>
-    <Hamburger />
     <Navigation />
   </nav>
 </header>
