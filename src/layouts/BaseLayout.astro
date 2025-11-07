@@ -17,7 +17,13 @@ const { pageTitle } = Astro.props;
   <body>
     <Header />
     <main>
-      <h2>{pageTitle}</h2>
+      {
+        () => {
+          if (pageTitle != 'Home') { // If this isn't the homepage,
+            return <h2>{pageTitle}</h2>; // Render the page title in an h2
+          }
+        }
+      }
       <slot />
       <!-- slot represents child content, which gets "slotted" in -->
     </main>
