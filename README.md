@@ -1,3 +1,8 @@
+# Features To do:
+- Featured/latest project on homepage
+- Latest post(s), if there are posts
+- Only render nav blog link if there are posts
+
 # To run locally:
 ```sh
 yarn run dev
