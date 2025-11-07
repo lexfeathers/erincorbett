@@ -100,6 +100,7 @@ header {
 }
 .hamburger-icons {
 	padding-top: 1.6rem;
+  margin-left: 2rem;
 }
 
 main {
@@ -258,11 +259,6 @@ ul:has(.tag) {
   align-items: center;
   flex: 1 0;
 }
-@media screen and (max-width: 749px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
 .grid-item {
   background-color: var(--color-background);
   border: 2px solid var(--color-text-faded);
@@ -416,6 +412,7 @@ iframe[title="YouTube video player"]{
 	justify-content: flex-start;
 }
 
+/* Desktop */
 @media screen and (min-width: 1200px) {
 	:root {
 		--page-width: calc(1200px - calc(var(--padding) * 2));
@@ -427,6 +424,7 @@ iframe[title="YouTube video player"]{
 		margin: 0 auto;
 	}
 }
+/* Tablets */
 @media screen and (min-width: 636px) {
     .nav-links {
         display: block;
@@ -469,7 +467,8 @@ iframe[title="YouTube video player"]{
 		gap: 0;
 	}
 }
-@media screen and (max-width: 839px) {
+/* Mobile */
+@media screen and (max-width: 908px) {
 	.image-with-text {
 		flex-direction: column;
 	}
@@ -487,4 +486,17 @@ iframe[title="YouTube video player"]{
 		flex-shrink: 1;
 		flex-basis: 0;
 	}
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 749px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 635px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
