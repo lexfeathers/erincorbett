@@ -17,6 +17,7 @@ Inside of your Astro project, you'll see the following folders and files:
 ```text
 /
 ├── public/
+│   └── images/ => Put all images in this directory
 ├── src/
 │   └── pages/
 │       └── index.astro
