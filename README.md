@@ -1,3 +1,8 @@
+# To run locally:
+```sh
+yarn run dev
+```
+
 # Astro Starter Kit: Minimal
 
 ```sh
