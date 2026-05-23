@@ -470,10 +470,15 @@ iframe[title="YouTube video player"]{
 		display: flex;
 		gap: calc(var(--padding) * 2);
 		width: 100%;
+    /* max-height: 450px; */
 	}
 	.image-with-text__image {
 		flex-basis: 40%;
 		flex-grow: 1;
+    
+    img {
+       min-width: 100%;
+    }
 	}
 	.image-with-text__text {
 		flex-basis: 60%;

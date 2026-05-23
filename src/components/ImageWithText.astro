@@ -1,5 +1,5 @@
 ---
-const { image_url, image_alt, heading, text } = Astro.props;
+const { image_url, image_alt, heading, subheading, text } = Astro.props;
 ---
 
 <div class="image-with-text">
@@ -8,6 +8,7 @@ const { image_url, image_alt, heading, text } = Astro.props;
   </div>
   <div class="image-with-text__text">
     <h2>{heading}</h2>
+    <small>{subheading}</small>
     <p>
       {text}
     </p>
