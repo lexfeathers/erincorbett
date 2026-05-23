@@ -397,7 +397,7 @@ ul:has(.tag) {
   display: flex;
   flex-direction: row;
   border: 2px solid var(--color-text-faded);
-  border-radius: var(--radius);
+  border-radius: calc(var(--radius) * 2);
   transition: .2s ease-out;
   background-color: var(--color-background);
   box-shadow: none;
