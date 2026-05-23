@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/ProjectLayout.astro
-title: " NEO-V EXTREME MIXTAPE VOL. 2: unAUTHORIZED and COMPLETE access to JOYLOVE and the ACIDIC EUPHORIA of new reALITY, OH YES! OH YES! OH YES!"
-draft: true
+title: "NEO-V EXTREME MIXTAPE VOL. 2: unAUTHORIZED and COMPLETE access to JOYLOVE and the ACIDIC EUPHORIA of new reALITY, OH YES! OH YES! OH YES!"
+draft: false
 client: "Erin Corbett"
 thumbnail: '/images/thumb_neo-v-vol1_cover.jpg'
 image: '/images/neo-v-vol1_cover.jpg'
@@ -12,7 +12,7 @@ description: ""
 workType: ["Music", "Album"]
 ---
 
-## listen on Bandcamp:
+## listen on bandcamp:
 
 <iframe style="border: 0; width: 100%; height: 340px;" src="https://bandcamp.com/EmbeddedPlayer/album=3036193646/size=large/bgcol=333333/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="https://erincorbett.bandcamp.com/album/neo-v-extreme-recalibration-personalized-syntholic-mixtape-vol-1">NEO-V EXTREME reCALIBRATION PERSONALIZED syntholic MIXTAPE VOL. 1 by Erin Corbett</a></iframe>
 
@@ -30,6 +30,6 @@ I have a bunch more tracks curated to make up Vol 2 of this, and I'm hoping I'll
 
 Anyways thanks for listening, and keep an ear to the ground for updates on my upcoming full-length album which I think is going to be really good and special :) 
 
-## credits
+## credits:
 
 Programmed, Mixed, and Mastered by Erin Corbett Music 

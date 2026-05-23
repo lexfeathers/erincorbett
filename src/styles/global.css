@@ -33,6 +33,19 @@
     width: var(--page-width);
 }
 
+.center {
+  margin: auto;
+}
+
+iframe[src*="bandcamp"] {
+  margin: auto;
+  width: 50% !important;
+
+  @media screen and (max-width: 749px) {
+    width: 100% !important;
+  }
+}
+
 .text-small {
     font-size: var(--text-small);
 }

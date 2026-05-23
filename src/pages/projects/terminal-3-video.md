@@ -18,4 +18,6 @@ Static Channel is :
 - monautomaton - synth, visuals
 - Alex Iso - bass, synth, drum programming
 
+## listen on bandcamp:
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Qj_13nrL44w?si=PpaHNc4yY5cg-guH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
