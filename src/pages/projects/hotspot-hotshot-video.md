@@ -10,6 +10,7 @@ pubDate: 2024-06-17
 status: released
 description: ""
 workType: ["Music Video"]
+excerpt: ""
 ---
 
 This song appears on “Full Spectrum Dissonance” by Martian Crisis Unit, available at https://martiancrisisunit.bandcamp.com

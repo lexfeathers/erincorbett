@@ -1,0 +1,46 @@
+---
+const { title, url, thumbnail, client, status, work_type, excerpt, date } =
+  Astro.props;
+
+let published = "";
+
+if (status == "released")
+    published = `${date.toISOString().slice(0, 10)}`;
+else
+    published = `${status}, ${date.toISOString().slice(0, 10)}`;
+---
+
+<div class="postcard">
+    <a href={url}>
+        <div class="postcard-image">
+            <img src={thumbnail} alt={title}>
+        </div>
+        <div class="postcard-information">
+            <h3>
+                {
+                    () => {
+                        const newTitle = title.slice(0,46);
+
+                        if (newTitle.length < title.length) {
+                            return newTitle + '[...]';
+                        }
+                        else {
+                            return title;
+                        }
+                    }
+                }
+            </h3>
+            <time datetime={published}>
+                {published}
+            </time>
+            <small>For: {client}</small>
+            <span>Type: 
+                {work_type.map((item: string) => (
+                    <span class="work-type">{item}</span>
+                ))}
+            </span>
+            <p>{excerpt}</p>
+        </div>
+    </a>
+</div>
+

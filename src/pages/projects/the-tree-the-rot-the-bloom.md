@@ -10,6 +10,7 @@ pubDate: 2026-03-20
 status: released
 description: ""
 workType: ["Music", "Album"]
+excerpt: "A meditation on the extreme polarities of transgender existence."
 ---
 
 ## listen on Bandcamp:

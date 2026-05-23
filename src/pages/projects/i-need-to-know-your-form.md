@@ -10,6 +10,7 @@ pubDate: 2023-10-06
 status: released
 description: ""
 workType: ["Music", "Single"]
+excerpt: ""
 ---
 
 A collaboration with [Void Femmes](https://voidfemmes.bandcamp.com)

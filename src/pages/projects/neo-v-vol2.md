@@ -10,6 +10,7 @@ pubDate: 2025-12-05
 status: released
 description: ""
 workType: ["Music", "Album"]
+excerpt: "The second volume in my 'NEO-V EXTREME MIXTAPE' series."
 ---
 
 ## listen on bandcamp:

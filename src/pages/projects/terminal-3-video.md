@@ -10,6 +10,7 @@ pubDate: 2024-01-24
 status: released
 description: ""
 workType: ["Music Video"]
+excerpt: ""
 ---
 
 A music video directed by Erin Corbett for Canadian musical project Static Channel

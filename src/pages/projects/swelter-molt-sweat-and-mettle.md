@@ -10,6 +10,7 @@ pubDate: 2020-11-16
 status: released
 description: ""
 workType: ["Music", "Album"]
+excerpt: ""
 ---
 
 A hyperactive journey through surveillance states and glitched-out folklore, full of colour and distortion and mayhem, pipelines and birds and tentacles and raw materials, dust and destruction, a scorching sun and simmering smog

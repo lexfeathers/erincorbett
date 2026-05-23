@@ -10,6 +10,7 @@ pubDate: 2018-12-21
 status: released
 description: ""
 workType: ["Music", "Album"]
+excerpt: ""
 ---
 
 A chopped-and-screwed album of wintry screeches, despondent pop, and glittery post-climate nightmare fantasies.

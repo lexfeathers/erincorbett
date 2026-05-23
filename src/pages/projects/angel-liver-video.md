@@ -10,6 +10,7 @@ pubDate: 2021-12-03
 status: released
 description: ""
 workType: ["Music Video"]
+excerpt: ""
 ---
 
 A short film directed and scored by Erin Corbett

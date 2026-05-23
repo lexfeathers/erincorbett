@@ -10,6 +10,7 @@ pubDate: 2014-07-15
 status: released
 description: ""
 workType: ["Music", "Album"]
+excerpt: ""
 ---
 
 A short history: I wrote and recorded this in early 2014 and released it under the name "After Hours". Shortly after I put together a band to perform the songs, and we called ourselves "Bears & Children" and re-released this under that name. Now I'm releasing it a THIRD time under my own name, because this was always a solo album, aaannnddd I'd still like people to hear it!

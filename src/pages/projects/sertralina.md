@@ -10,6 +10,7 @@ pubDate: 2016-08-09
 status: released
 description: ""
 workType: ["Music", "Album"]
+excerpt: ""
 ---
 
 In a kingdom plagued by an unspeakable cosmic horror, Princess Sertralina leaves the keys to her palace with Mario while she goes on a quest to find the source of evil.

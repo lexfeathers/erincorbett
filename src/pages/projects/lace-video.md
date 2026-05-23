@@ -10,6 +10,7 @@ pubDate: 2026-03-06
 status: released
 description: "A music video for the leading single from 'The Tree, The Rot, The Bloom'"
 workType: ["Music Video"]
+excerpt: "A music video for the leading single from 'The Tree, The Rot, The Bloom'"
 ---
 
 From the album ["The Tree The Rot The Bloom"](../the-tree-the-rot-the-bloom), out March 20 2026.

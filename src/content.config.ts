@@ -19,6 +19,7 @@ const portfolio = defineCollection({
         pubDate: z.coerce.date(),
         description: z.string(),
         workType: z.array(z.string()),
+        excerpt: z.string()
     })
 });
 

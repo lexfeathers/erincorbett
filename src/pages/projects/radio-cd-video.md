@@ -10,6 +10,7 @@ pubDate: 2024-09-06
 status: released
 description: ""
 workType: ["Music Video"]
+excerpt: ""
 ---
 
 I wrote and recorded "RadioCD" back in 2019, cobbled together out of a bunch of disparate elements. A scratched up orchestral 7" record found on the side of the road, a MIDI-driven modular synth patch sync'd up with improvised auto-tuned vocals, and some delightfully trashy live drums. Long before the song came out I put out a call for someone to collaborate on the video with and that's how I met Kat Zoumboulakis. We spent about a year slowly collecting an assortment of CDs, cassettes, consumer electronics, old phones, broken cables, photography equipment, which Kat spray-painted then glued them into strange abstract sculptures. Finally, on a sweltering day in Summer 2021, I headed over to Kat's to film the thing. I spent several hours in front of a green screen while Kat re-arranged the sculptures around me. We shot it all with a VHS camcorder. I played a guitar that had been spray-painted to look like a rock, a prop that I received from friends at Toronto's Bump TV. We got very hot and sweaty. We ate dumplings. It was a good day. A few months later this video emerges! Huge thank yous to smolaudio, Bump TV and everyone who donated material and helped out with the video. 

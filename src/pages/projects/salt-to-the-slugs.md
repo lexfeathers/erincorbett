@@ -10,6 +10,7 @@ pubDate: 2024-10-10
 status: released
 description: ""
 workType: ["Music", "Album"]
+excerpt: ""
 ---
 A whirlwind electronic world in musical form. 
 

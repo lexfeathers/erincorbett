@@ -10,6 +10,7 @@ pubDate: 2024-10-04
 status: released
 description: ""
 workType: ["Music Video"]
+excerpt: ""
 ---
 
 Music video for the single "Buick Riviera" from Toronto-based Slug Altar off their debut EP "Salt to the Slugs"

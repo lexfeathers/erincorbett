@@ -1,9 +1,53 @@
 ---
+import ImageWithText from "../components/ImageWithText.astro";
+import PostCard from "../components/PostCard.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import dayjs from "dayjs";
+
+const allProjects = await getCollection("portfolio", ({ data }) => {
+  return data.draft == false;
+});
+
+allProjects.sort((a, b) => {
+  return dayjs(b.data.pubDate).isBefore(dayjs(a.data.pubDate)) ? -1 : 1;
+});
+
+const latestProjects = allProjects.slice(0, 3);
 
 const pageTitle = "Home";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h2>ERIN. CORBETT. MUSIC.</h2>
+  <ImageWithText
+    image_url="/images/thetreetherotthebloom_cover.jpg"
+    image_alt="The cover art for 'The Tree, The Rot, The Bloom'"
+    heading="Hi, I'm Erin!"
+    subheading="A multidisciplary artist in Toronto"
+    text=
+    `
+      Welcome to my website! Here you can find information about my work or read my thoughts 
+      as I make my journey across the Information Superhighway :3
+    `
+  />
+
+  <div class="latest">
+    <h2>Latest projects:</h2>
+
+    {
+      latestProjects.map((project: any) => (
+        <PostCard
+          url={`/projects/${project.id}/`}
+          title={project.data.title}
+          heading={project.data.title}
+          date={project.data.pubDate}
+          thumbnail={project.data.thumbnail}
+          client={project.data.client}
+          status={project.data.status}
+          work_type={project.data.workType}
+          excerpt={project.data.excerpt}
+        />
+      ))
+    }
+  </div>
 </BaseLayout>

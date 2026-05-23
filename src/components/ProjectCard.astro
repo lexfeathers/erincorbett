@@ -1,6 +1,13 @@
 ---
 const { title, url, thumbnail, client, status, work_type, description, date } =
   Astro.props;
+
+let published = "";
+
+if (status == "released")
+    published = `${date.toISOString().slice(0, 10)}`;
+else
+    published = `${status}, ${date.toISOString().slice(0, 10)}`;  
 ---
 
 <div class="grid-item">
@@ -10,7 +17,20 @@ const { title, url, thumbnail, client, status, work_type, description, date } =
         <img src={thumbnail} alt={title} title={title} class="item-photo" />
       </div>
       <div class="grid-item__details">
-        <h3>{title}</h3>
+        <h3>
+          {
+              () => {
+                  const newTitle = title.slice(0,46);
+
+                  if (newTitle.length < title.length) {
+                      return newTitle + '[...]';
+                  }
+                  else {
+                      return title;
+                  }
+              }
+          }
+        </h3>
         <span class="grid-item__client text-small"
           ><span aria-hidden="true" class="icon faded">&#9733;</span>
           {client}</span
@@ -19,17 +39,9 @@ const { title, url, thumbnail, client, status, work_type, description, date } =
         <span class="grid-item__worktype"
           >{work_type.map((item: string) => <span>{item}</span>)}</span
         >
-        <span class="grid-item__date">
-          {
-            () => {
-              if (status == "released") {
-                return `${date.toISOString().slice(0, 10)}`;
-              } else {
-                return `${status}, ${date.toISOString().slice(0, 10)}`;
-              }
-            }
-          }
-        </span>
+        <time class="grid-item__date" datetime={published}>
+          {published}
+        </time>
       </div>
     </div>
   </a>
