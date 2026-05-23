@@ -122,6 +122,14 @@ main {
   flex: 1 0;
   font-weight: 300;
   font-size: var(--text-medium);
+
+  p {
+    margin-right: 1rem;
+
+    @media screen and (max-width: 749px) {
+      margin-right: 0px;
+    }
+  }
 }
 
 * {
