@@ -46,6 +46,7 @@ const { frontmatter } = Astro.props;
       class="article-image"
       src={frontmatter.image}
       alt={frontmatter.image_description}
+      loading="lazy"
     />
     <figcaption style="font-style: italic;">
       {frontmatter.image_description && frontmatter.image_description}
