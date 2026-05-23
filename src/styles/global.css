@@ -265,6 +265,12 @@ ul:has(.tag) {
     font-family: var(--font-sans-serif);
     font-size: var(--text-medium);
     cursor: pointer;
+    width: fit-content; 
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
 }
 .button:hover {
     background-color: color-mix(in srgb, var(--color-text), var(--color-background) 20%);
