@@ -14,6 +14,11 @@
     /* Borders */
     --thickness: 1px;
   }
+
+  main {
+    /* Typography */
+    font-weight: 300;
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -29,6 +34,12 @@
 
     /* Borders */
     --thickness: 2px;
+
+  }
+  
+  main {
+    /* Typography */
+    font-weight: 400 !important;
   }
 }
 
