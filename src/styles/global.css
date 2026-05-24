@@ -203,7 +203,7 @@ code {
   padding: 2px 4px;
   background-color: var(--color-darker-background);
   color: var(--color-secondary);
-  border: 1px solid var(--color-text-faded);
+  border: var(--thickness) solid var(--color-text-faded);
   border-radius: 4px;
   box-shadow: inset 0px 2px 2px var(--color-shadow);
 }
@@ -263,8 +263,8 @@ code {
 }
 nav:has(.nav-links.expanded) {
 	margin-top: 1rem;
-	border-top: 2px solid var(--color-darker-text-faded);
-	border-bottom: 2px solid var(--color-darker-text-faded);
+	border-top: var(--thickness) solid var(--color-darker-text-faded);
+	border-bottom: var(--thickness) solid var(--color-darker-text-faded);
 }
 
 ul:has(.tag) {
@@ -321,7 +321,7 @@ ul:has(.tag) {
 }
 .grid-item {
   background-color: var(--color-background);
-  border: 2px solid var(--color-text-faded);
+  border: var(--thickness) solid var(--color-text-faded);
   border-radius: 4px;
   min-width: 25%;
   overflow-wrap: break-word;
@@ -430,7 +430,7 @@ ul:has(.tag) {
 .postcard {
   display: flex;
   flex-direction: row;
-  border: 2px solid var(--color-text-faded);
+  border: var(--thickness) solid var(--color-text-faded);
   border-radius: calc(var(--radius) * 2);
   transition: .2s ease-out;
   background-color: var(--color-background);
@@ -503,7 +503,7 @@ ul:has(.tag) {
 .post-list__item {
   margin-bottom: 1rem;
   padding: 1rem;
-  border: 2px solid var(--color-text-faded);
+  border: var(--thickness) solid var(--color-text-faded);
   border-radius: 4px;
   background-color: var(--color-background);
   box-shadow: 0px 4px 4px var(--color-shadow);
@@ -576,8 +576,8 @@ iframe[title="YouTube video player"]{
         width: auto;
         background: none;
         color: var(--color-text);
-        border-left: 2px solid var(--color-text-faded);
-        border-right: 2px solid var(--color-text-faded);
+        border-left: var(--thickness) solid var(--color-text-faded);
+        border-right: var(--thickness) solid var(--color-text-faded);
         padding-left: 1rem;
       }
       
