@@ -20,14 +20,15 @@ else
         <h3>
           {
               () => {
-                  const newTitle = title.slice(0,46);
+                        const titleInWords = title.split(" ");
+                        const shortTitle = titleInWords.slice(0,8);
 
-                  if (newTitle.length < title.length) {
-                      return newTitle + '[...]';
-                  }
-                  else {
-                      return title;
-                  }
+                        if (shortTitle.length < titleInWords.length) {
+                            return shortTitle.join(" ") + '[...]';
+                        }
+                        else {
+                            return title;
+                        }
               }
           }
         </h3>
