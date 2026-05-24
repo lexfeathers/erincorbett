@@ -1,15 +1,36 @@
 @import url(../styles/fonts.css);
 
-:root {
+@media (prefers-color-scheme: dark) {
+  :root {
     /* Colours */
-    --color-text: black;
-    --color-secondary: #f4ffd3;
+    --color-text: #e0e0e0;
+    --color-secondary: #e6659b;
+    --color-background: #161616;
+    --color-background-gradient: linear-gradient(to bottom, #181818, #101010);
+    --color-shadow: black;
+    --color-text-faded: color-mix(in srgb, var(--color-text), var(--color-background) 70%);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Colours */
+    --color-text: #242424;
+    --color-secondary: #fffcd3;
     --color-background: #ffaa00;
     --color-background-gradient: linear-gradient(to bottom, #ffaa00, #c98600);
+    --color-text-faded: color-mix(in srgb, var(--color-text), var(--color-background) 70%);
+    --color-shadow: var(--color-text-faded);
+  }
+}
+
+:root {
+    color-scheme: light dark;
+
     --color-lighter-background: color-mix(in srgb, var(--color-background), var(--color-secondary) 10%);
     --color-darker-background: color-mix(in srgb, var(--color-background), var(--color-text) 10%);
-    --color-text-faded: color-mix(in srgb, var(--color-text), var(--color-background) 70%);
     --color-darker-text-faded: color-mix(in srgb, var(--color-text), var(--color-background) 50%);
+    --color-background-button: color-mix(in srgb, var(--color-background), var(--color-text) 7%);
 
     /* Font sizing */
     --text-small: 12pt;
@@ -22,7 +43,7 @@
 
     /* Layout */
     --page-width: 100%;
-	--padding: 1rem;
+    --padding: 1rem;
 
 	/* Scrollbars */
 	scrollbar-width: auto;
@@ -85,6 +106,7 @@ iframe[src*="bandcamp"] {
 html {
   font-family: 'Fira Code', monospace;
   height: 100%;
+  color: var(--color-text);
 }
 
 body {
@@ -122,7 +144,6 @@ main {
   flex: 1 0;
   font-weight: 300;
   font-size: var(--text-medium);
-  padding: 2rem 0;
 
   p {
     margin-right: 1rem;
@@ -133,7 +154,7 @@ main {
   }
 
   img {
-    box-shadow: 0px 4px 8px var(--color-text-faded);
+    box-shadow: 0px 4px 8px var(--color-shadow);
   }
 }
 
@@ -178,7 +199,7 @@ code {
   color: var(--color-secondary);
   border: 1px solid var(--color-text-faded);
   border-radius: 4px;
-  box-shadow: inset 0px 2px 2px var(--color-text-faded);
+  box-shadow: inset 0px 2px 2px var(--color-shadow);
 }
 
 /* nav styles */
@@ -259,7 +280,8 @@ ul:has(.tag) {
 .button {
     padding: .5rem;
     border: none;
-    background-color: var(--color-text);
+    background-color: var(--color-background-button);
+    border: 2px solid var(--color-text-faded);
     border-radius: var(--radius);
     color: var(--color-secondary);
     font-family: var(--font-sans-serif);
@@ -273,7 +295,7 @@ ul:has(.tag) {
     }
 }
 .button:hover {
-    background-color: color-mix(in srgb, var(--color-text), var(--color-background) 20%);
+    background-color: color-mix(in srgb, var(--color-background-button), var(--color-background) 20%);
 }
 
 ::selection {
@@ -298,7 +320,7 @@ ul:has(.tag) {
   min-width: 25%;
   overflow-wrap: break-word;
   height: auto;
-  box-shadow: 0px 4px 8px var(--color-darker-background);
+  box-shadow: 0px 4px 8px var(--color-shadow);
   padding: 1rem;
   align-self: stretch;
   transition: ease-out 200ms;
@@ -362,7 +384,7 @@ ul:has(.tag) {
 .grid-item__client .icon {
   border: 1px solid var(--colour-tertiary);
   border-radius: 4px;
-  box-shadow: inset 0px 4px 2px var(--colour-dark-background);
+  box-shadow: inset 0px 4px 2px var(--colour-shadow);
   margin-right: .5rem;
   padding: 1px;
   font-size: 18pt;
@@ -410,7 +432,7 @@ ul:has(.tag) {
 
   &:hover {
     translate: 0px -2px;
-    box-shadow: 0px 4px 8px var(--color-text-faded);
+    box-shadow: 0px 4px 8px var(--color-shadow);
     background-color: var(--color-lighter-background);
   }
   
@@ -447,7 +469,7 @@ ul:has(.tag) {
     aspect-ratio: 1/1;
     margin: 1rem;
     align-self: center;
-    box-shadow: 0px 2px 16px var(--color-text-faded);
+    box-shadow: 0px 2px 16px var(--color-shadow);
   }
   
   .postcard-information {
@@ -478,7 +500,7 @@ ul:has(.tag) {
   border: 2px solid var(--color-text-faded);
   border-radius: 4px;
   background-color: var(--color-background);
-  box-shadow: 0px 4px 4px var(--color-darker-background);
+  box-shadow: 0px 4px 4px var(--color-shadow);
   transition: .15s;
 }
 .post-list__item:hover {
@@ -504,7 +526,7 @@ iframe[title="YouTube video player"]{
   width: 90%;
   height: 560px;
   border-radius: 4px;
-  box-shadow: 0px 4px 8px var(--colour-background);
+  box-shadow: 0px 4px 8px var(--colour-shadow);
 }
 @media screen and (max-width: 749px) {
   iframe[title="YouTube video player"] {
@@ -518,7 +540,7 @@ iframe[title="YouTube video player"]{
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
-  box-shadow: 0px 4px 8px var(--color-text-faded);
+  box-shadow: 0px 4px 8px var(--color-shadow);
 }
 .image-with-text__text {
 	flex-direction: column;
@@ -558,7 +580,7 @@ iframe[title="YouTube video player"]{
       .nav-links a:hover,
       .nav-links a:focus {
         text-decoration: underline;
-        box-shadow: inset 0px 0px 0px 2px var(--color-text-faded);
+        box-shadow: inset 0px 0px 0px 2px var(--color-shadow);
         background-color: var(--color-darker-background);
     }
 

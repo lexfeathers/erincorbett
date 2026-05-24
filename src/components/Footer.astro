@@ -11,22 +11,26 @@
     border-top: 2px solid var(--color-text-faded);
     padding-top: 1rem;
   }
-  a {
-    padding: 0.5rem 1rem;
-    color: var(--color-secondary);
-    background-color: var(--color-text);
-    text-decoration: none;
-    font-size: var(--text-small);
-  }
   .social-list {
     padding-left: 0px;
-    height: fit-content;
-    line-height: 32pt;
+    height: calc(fit-content + 1rem);
+    line-height: 42pt;
   }
   .social-item {
     list-style: none;
     display: inline;
     margin: auto;
+  }
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    gap: 1ch;
+    height: 2rem;
+  }
+  .copyright {
+    font-size: 14pt;
+    display: flex;
+    margin-top: 4px;
   }
 </style>
 
@@ -59,5 +63,5 @@
       >
     </li>
   </ul>
-  <p>&copy; Erin Corbett {new Date().getFullYear()}</p>
+  <p class="footer-bottom"><span class="copyright">&copy;</span><span>Erin Corbett {new Date().getFullYear()}</span></p>
 </footer>
