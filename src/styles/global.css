@@ -110,7 +110,7 @@ iframe[src*="bandcamp"] {
 }
 
 html {
-  font-family: 'Fira Code', monospace;
+  font-family: 'Quicksand', 'Fira Code', monospace;
   height: 100%;
   color: var(--color-text);
 }
