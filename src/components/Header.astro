@@ -7,10 +7,12 @@ const title = "Erin Corbett";
 
 <header>
   <div class="header-top">
-    <h1>
-      <a href="/" id="logo"><img src="/favicon.ico" alt="Erin Corbett" /></a>
-      <a href="/" id="logo">{title}</a>
-    </h1>
+    <a href="/" id="logo">
+      <h1>
+        <img src="/favicon.ico" alt="Erin Corbett" />
+        {title}
+      </h1>
+    </a>
     <div class="hamburger-icons">
       <Hamburger />
     </div>
@@ -25,7 +27,8 @@ const title = "Erin Corbett";
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
-    & a > img {
+    
+    img {
       margin-right: 1rem;
     }
   }
