@@ -21,11 +21,11 @@ A whirlwind electronic world in musical form.
 ## credits
 
 Slug Altar is:
-- [Laura Dickens](https://leucrocuta.bandcamp.com)
+- [LD Dickens](https://leucrocuta.bandcamp.com)
 - [Erin Corbett](https://erincorbett.bandcamp.com)
 
-- All songs written, produced, and performed by Erin and Laura
-- Mixed and Mastered by Erin and Laura at DAÏMÔN Centre d'artistes autogéré in Gatineau Québec
+- All songs written, produced, and performed by Erin and LD
+- Mixed and Mastered by Erin and LD at DAÏMÔN Centre d'artistes autogéré in Gatineau Québec
 - Artwork by [Dot Starkey](https://hex-a-decimal.bandcamp.com)
 
 We acknowledge the support of the Canada Council for the Arts in the writing and recording of this album

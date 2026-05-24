@@ -22,7 +22,7 @@ Buy 'Salt to The  Slugs': https://slugaltar.bandcamp.com
 ## credits
 
 - Directed by Erin Corbett
-- Slug Altar is Erin Corbett and Laura Dickens
-- Mixed and Mastered by Erin and Laura at DAÏMÔN Centre d'artistes autogéré in Gatineau Québec 
+- Slug Altar is Erin Corbett and LD Dickens
+- Mixed and Mastered by Erin and LD at DAÏMÔN Centre d'artistes autogéré in Gatineau Québec 
 - We acknowledge the support of the Canada Council for the Arts in the writing and recording of this album
 - And thank you DAÏMÔN Centre for your support and facilities
